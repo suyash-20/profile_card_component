@@ -1,0 +1,147 @@
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <style>
+
+      body{
+          font-size:18px;
+          background-color:hsl(185, 90%, 40%);
+          background-image: url(./images/bg-pattern-top.svg);
+          background-image: url(./images/bg-pattern-bottom.svg);
+          font-family: 'Kumbh Sans', sans-serif;
+      }
+      main{
+          max-width: 500px;
+          background-color:white;
+          margin:auto;
+          border-radius: 17px;
+          box-shadow: 0px 10px 60px;
+          overflow: hidden;
+          background-image: url(./images/bg-pattern-top.svg);
+          
+      }
+
+      header{
+          height: 140px;
+          background-image:url(./images/bg-pattern-card.svg);
+          background-size: 700px;
+          position: relative;
+      }
+      
+      header .avatar{
+              width: 80px;
+              height: 80px;
+              border-radius: 40px;
+              background: white;
+              background-image: url(./images/image-victor.jpg);
+              border-color: white;
+              border-width: 30%;
+              border: 2px solid;
+              position: absolute;
+              bottom: -33px;
+              left: 50%;
+              transform: translateX(-50%);
+      }
+      
+      .content{
+          text-align: center;
+          padding-top: 25px;
+      }
+
+      h2{
+          font-size: 20px;
+          padding-bottom: -20px;
+      }
+
+      h2 .age{
+          font-size: 19px;
+          display:inline-block;
+          opacity: .4;
+          
+      }
+
+      .label{
+          font-weight: bold;
+          opacity: .5;
+          font-size: 20px;
+      }
+
+      footer{
+          display: flex;
+          border-top: 1px solid rgb(0,0,0,0.2);
+          margin-top: 15px;
+      }
+
+      .col{
+        flex:.4;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;     
+      }
+
+      small{
+          opacity: .6;
+
+      }
+
+    .attribution { font-size: 11px; text-align: center; margin-top: 15px; }
+    .attribution a { color: hsl(0, 0%, 86%); }
+  </style>
+
+</head>
+
+
+<body>
+    <main>
+        <div class = "card"></div>
+            <header>
+                <div class = "avatar"></div>
+            </header>
+            <div class="content">
+                <h2>Victor Crest
+                    <div class = "age">23</div>
+                </h2>
+                <div class = "label">
+                London
+            </div>
+            </div>
+
+            <footer>
+                <div class = "col">
+                    <h3>80K</h3>
+                    <small>Followers</small>
+                </div>
+
+                <div class = "col">
+                    <h3>803K</h3>
+                    <small>Likes</small>
+                </div>
+                
+                <div class = "col">
+                    <h3>1.4K</h3>
+                    <small>Photos</small>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <br>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/suyash-20">Suyash Chavan</a>.
+    </div>
+</body>
+</html>
